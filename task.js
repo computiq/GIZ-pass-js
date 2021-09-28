@@ -9,13 +9,12 @@ let numbers = [
     16
 ];
 
-console.log("Original numbers list: ",numbers)
+console.log("Original numbers list: ", numbers)
 
 for(let i = 0 ; i < numbers.length ; i++)
 {
     for(let j = 0 ; j < numbers.length - 1 ; j++)
     {
-        
         if(numbers[i] > numbers[j + 1])
         {
             let temp = numbers[j];
@@ -25,14 +24,12 @@ for(let i = 0 ; i < numbers.length ; i++)
     }
 }
 
-console.log("numbers list After sorting: ",numbers)
-
+console.log("Numbers list After sorting: ", numbers)
 
 for(let i = 0 ; i < numbers.length ; i++)
 {
     for(let j = 0 ; j < numbers.length - 1 ; j++)
     {
-        
         if(numbers[i] < numbers[j + 1])
         {
             let temp = numbers[j];
@@ -42,6 +39,6 @@ for(let i = 0 ; i < numbers.length ; i++)
     }
 }
 
-console.log("numbers list After Desc sorting: ",numbers)
+console.log("Numbers list After Desc sorting: ", numbers)
 
 
