@@ -3,6 +3,13 @@
 Task to be passed by candidates of GIZ program.
 
 
+    1. Fork the repo
+    2. Clone the forked repo to your local machine
+    3. Commit your solution
+    4. push your solution to your forked repo
+    5. Send the link of your solution repo over the form
+
+
 ### Instructions
 - Download code on your computer and open it within any favourite IDE.
 - The code is supposed to work as a bubble sort algorithm, that is used for sorting integers number of the given array in ASC order then again in DESC order. but there are several issues that making the code doesn’t achieve correctness with a good code design and style.
