@@ -90,5 +90,22 @@ console.log("Numbers list After Desc sorting: ", numbers)
 //         }
 //     }
 // }
-
 // console.log("Numbers list After Desc sorting: ", numbers)
+// making element of the Array immutable
+let newarray=[...numbers];
+
+numbers.push(545,565); // adding new vlaues to the array
+console.log("immutable array ", newarray)
+
+var fs = require('fs'); 
+let txt = fs.readFileSync('data.txt', 'utf8'); // reading the content of data.txt file
+
+let arr = Array.from(txt.split(','),Number); // converting content of data.txt file to sequence of integer numbers (Array of integers)
+
+console.log("content of data.txt file: ", arr)
+
+let lowestToHighest = arr.sort((a, b) => a - b); // soritng array elements in ASC order
+
+console.log("ASC order data.txt content: ",lowestToHighest)
+//storing the ASC order of the array in a new file called output.txt
+fs.writeFileSync('output.txt',"ASC order : "+ lowestToHighest);
