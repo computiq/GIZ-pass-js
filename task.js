@@ -1,15 +1,8 @@
-let numbers = [
-    5,
-    8,
-    0,
-    1,
-    9,
-    11,
-    15,
-    16
-];
+<script>
+let numbers = [10,10,31,19,18,21,55,23,20,10,10,78,80,99,15];
 
-console.log("Original numbers list: ", numbers)
+
+console.log('Original numbers list: ', numbers);
 
 for(let i = 0 ; i < numbers.length ; i++)
 {
@@ -18,13 +11,13 @@ for(let i = 0 ; i < numbers.length ; i++)
         if(numbers[i] > numbers[j + 1])
         {
             let temp = numbers[j];
-            numbers[j] = numbers[j + 1]
+            numbers[j] = numbers[j + 1];
             numbers[j + 1] = temp;
         }
     }
 }
 
-console.log("Numbers list After sorting: ", numbers)
+console.log('Numbers list After sorting:', numbers);
 
 for(let i = 0 ; i < numbers.length ; i++)
 {
@@ -33,12 +26,12 @@ for(let i = 0 ; i < numbers.length ; i++)
         if(numbers[i] < numbers[j + 1])
         {
             let temp = numbers[j];
-            numbers[j] = numbers[j + 1]
+            numbers[j] = numbers[j + 1];
             numbers[j + 1] = temp;
         }
     }
 }
 
-console.log("Numbers list After Desc sorting: ", numbers)
+console.log('Numbers list After Desc sorting: ', numbers);
 
-
+</script>
